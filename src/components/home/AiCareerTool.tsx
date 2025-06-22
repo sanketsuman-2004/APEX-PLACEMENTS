@@ -1,7 +1,7 @@
 'use client';
 
-import { useState } from 'react';
-import { useFormState, useFormStatus } from 'react-dom';
+import { useState, useActionState } from 'react';
+import { useFormStatus } from 'react-dom';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import * as z from 'zod';
@@ -47,7 +47,7 @@ function SubmitButton() {
 }
 
 export default function AiCareerTool() {
-  const [state, formAction] = useFormState(getCareerPath, initialState);
+  const [state, formAction] = useActionState(getCareerPath, initialState);
   
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
