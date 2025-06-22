@@ -1,15 +1,4 @@
-import { Roadmap, InterviewQuestion, Project, Certification } from './types';
-import { Briefcase, Code, Cpu, Database, Fingerprint, GitBranch, Network, Shield, TestTube2, Cloud } from 'lucide-react';
-
-export const roadmaps: Roadmap[] = [
-  { id: 'frontend', title: 'Frontend Developer', description: 'Master HTML, CSS, JavaScript, and React to build beautiful user interfaces.', icon: <Code className="h-8 w-8"/> },
-  { id: 'backend', title: 'Backend Developer', description: 'Learn Node.js, databases, and APIs to power web applications.', icon: <Database className="h-8 w-8"/> },
-  { id: 'fullstack', title: 'Full Stack Developer', description: 'Become proficient in both frontend and backend development.', icon: <GitBranch className="h-8 w-8"/> },
-  { id: 'devops', title: 'DevOps Engineer', description: 'Understand CI/CD, cloud infrastructure, and automation.', icon: <Cloud className="h-8 w-8"/> },
-  { id: 'ai-ml', title: 'AI/ML Engineer', description: 'Dive into machine learning, neural networks, and data modeling.', icon: <Cpu className="h-8 w-8"/> },
-  { id: 'data-science', title: 'Data Scientist', description: 'Explore data analysis, visualization, and statistical modeling.', icon: <TestTube2 className="h-8 w-8"/> },
-  { id: 'cybersecurity', title: 'Cybersecurity Analyst', description: 'Learn to protect systems, networks, and data from threats.', icon: <Shield className="h-8 w-8"/> },
-];
+import { InterviewQuestion, Project, Certification } from './types';
 
 export const interviewQuestions: InterviewQuestion[] = [
   { id: 'dsa1', category: 'DSA', question: 'What is the difference between an array and a linked list?', answer: 'Arrays are contiguous memory blocks with fixed size, offering O(1) access but slow O(n) insertion/deletion. Linked lists use pointers, allowing dynamic size and O(1) insertion/deletion but O(n) access time.' },
